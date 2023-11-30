@@ -7,7 +7,10 @@
 * Pada folder testing-postman-node, Run command:install packages: `npm i`
 
 # Setup Postman
-Import collection and environment to Postman.
+* Collection: /test/Postman Testing Collection.postman_collection.json
+* Environment: test/postman-testing-env.postman_environment.json
+* Import collection and environment to Postman from folder: test/.
+
 
 # Run 
 * run command: `npm run start-dev`, didalam folder: testing-postman-node
