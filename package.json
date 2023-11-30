@@ -1,0 +1,21 @@
+{
+  "name": "testing-postman-node",
+  "version": "0.0.1",
+  "description": "for testing postman",
+  "start": "server.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "nodemon ./src/server.js"
+  },
+  "author": "sharingForBetter",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.2",
+    "joi": "^17.11.0",
+    "nanoid": "^3.3.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
