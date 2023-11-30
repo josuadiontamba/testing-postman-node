@@ -7,6 +7,111 @@
 	},
 	"item": [
 		{
+			"name": "0. Execution Order (example)",
+			"item": [
+				{
+					"name": "Hello World",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"console.log('Hello World >> Pre-request Script >> executed');"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"console.log('Hello World >> Tests >> executed');"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/hello",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"hello"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "About",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"console.log('About >> Pre-request Script >> executed');"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"console.log('About >> Tests >> executed');"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/about",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"about"
+							]
+						},
+						"description": "Contoh Endpoint mengembalikan HTML."
+					},
+					"response": []
+				}
+			],
+			"description": "Testing Execution Order\n\nPre-Request Script & Tests",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"console.log('Execution Order Folder >> Pre-request Script >> executed')"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"console.log('Execution Order Folder >> Tests >> executed')"
+						]
+					}
+				}
+			]
+		},
+		{
 			"name": "4. CRUD Flow",
 			"item": [
 				{
@@ -314,111 +419,6 @@
 				}
 			],
 			"description": "Contoh untuk CRUD dengan use case sederhana: Daftar Kontak."
-		},
-		{
-			"name": "Execution Order",
-			"item": [
-				{
-					"name": "Hello World",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"exec": [
-									"console.log('Hello World >> Pre-request Script >> executed');"
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"exec": [
-									"console.log('Hello World >> Tests >> executed');"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:5000/hello",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "5000",
-							"path": [
-								"hello"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "About",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"exec": [
-									"console.log('About >> Pre-request Script >> executed');"
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"exec": [
-									"console.log('About >> Tests >> executed');"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:5000/about",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "5000",
-							"path": [
-								"about"
-							]
-						},
-						"description": "Contoh Endpoint mengembalikan HTML."
-					},
-					"response": []
-				}
-			],
-			"description": "Testing Execution Order",
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"type": "text/javascript",
-						"exec": [
-							"console.log('Execution Order Folder >> Pre-request Script >> executed')"
-						]
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"type": "text/javascript",
-						"exec": [
-							"console.log('Execution Order Folder >> Tests >> executed')"
-						]
-					}
-				}
-			]
 		},
 		{
 			"name": "1. Hello World",
