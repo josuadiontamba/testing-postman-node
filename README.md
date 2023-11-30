@@ -1,4 +1,5 @@
 # Setup Environment
+* NodeVersion: v20.10.0
 * Sangat disarankan menggunakan : Linux(Ubuntu) atau WSL.
 * Install NodeJs
 * Install packages: `npm i`
