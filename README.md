@@ -1,7 +1,7 @@
 # Setup Environment
-* NodeVersion: v20.10.0
-* Sangat disarankan menggunakan : Linux(Ubuntu) atau WSL.
-* Install NodeJs
+* Intall [NodeJS](https://nodejs.org/en/download), NodeVersion: v20.10.0
+* Install [Postman](https://www.postman.com/downloads/)
+* Disarankan menggunakan : Linux(Ubuntu distro) atau WSL.
 * Install packages: `npm i`
 
 # Setup Postman
